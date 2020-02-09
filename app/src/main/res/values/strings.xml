@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Androidappfirst</string>
+    <string name="header1">Currency \n \t Converter</string>
+    <string name="header">Convert</string>
+    <string name="usd">USD</string>
+    <string name="INR">INR</string>
+
+</resources>

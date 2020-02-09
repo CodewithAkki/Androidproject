@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexWrap="wrap"
+    app:alignItems="stretch"
+    app:alignContent="stretch"
+    android:background="@drawable/backofact1"
+
+    >
+
+    <com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:shadowAlpha="0.4"
+        app:shadowOffsetX="30"
+        app:shadowOffsetY="30">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/top"
+            android:elevation="10dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/logo"
+                android:layout_marginLeft="-45dp"
+                android:layout_marginTop="40dp"
+
+                android:src="@drawable/header" />
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/logo" />
+
+
+        </RelativeLayout>
+
+
+    </com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper>
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:id="@+id/spinner"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:id="@+id/e2"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="@string/INR"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:hint="@string/usd"
+        android:gravity="center"
+        android:id="@+id/e1"
+        android:fontFamily="@font/montserrat_bold"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:layout_below="@+id/e1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"
+        android:background="@drawable/logoback"
+        />
+
+</RelativeLayout>
