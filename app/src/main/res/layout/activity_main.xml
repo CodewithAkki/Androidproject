@@ -28,6 +28,7 @@
             android:elevation="10dp"
             android:gravity="right"
             android:orientation="vertical"
+            android:id="@+id/rel"
             tools:ignore="RtlHardcoded">
 
             <ImageView
@@ -51,30 +52,76 @@
 
         </RelativeLayout>
 
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:hint="@string/Value" />
+
 
     </com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper>
-    <Spinner
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:id="@+id/spinner"
-        />
 
-    <EditText
-        android:layout_width="150dp"
-        android:id="@+id/e2"
-        android:layout_centerHorizontal="true"
+    <TableLayout
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:hint="@string/INR"
-        android:gravity="center"
-        android:fontFamily="@font/montserrat_bold"/>
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        >
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_column="1"
+                />
+
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:id="@+id/sp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_column="1"
+                />
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sp1"
+                />
+
+
+        </TableRow>
+    </TableLayout>
+
     <EditText
         android:layout_width="150dp"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_marginTop="320dp"
-        android:hint="@string/usd"
+        android:hint="@string/Answer"
+        android:editable="false"
         android:gravity="center"
         android:id="@+id/e1"
         android:fontFamily="@font/montserrat_bold"/>
@@ -87,6 +134,15 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/button"
         android:background="@drawable/logoback"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/button"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo21"
+        android:layout_marginTop="26dp"
+        android:scaleType="fitXY"
+
         />
 
 </RelativeLayout>
